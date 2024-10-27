@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.S": "gas",
+        "stdarg.h": "c",
+        "printk.h": "c",
+        "stdio.h": "c",
+        "stdint.h": "c",
+        "memory.h": "c",
+        "lib.h": "c"
+    }
+}

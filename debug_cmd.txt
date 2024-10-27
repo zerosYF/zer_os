@@ -1,0 +1,9 @@
+objdump -d system | head -n 40 | tail -n 20
+
+cp kernel.bin ../bootloader
+cd ../bootloader
+sudo mount myboot.img /mnt
+sudo cp kernel.bin /mnt
+sync
+sudo umount /mnt
+qemu-system-x86_64 -fda myboot.img
